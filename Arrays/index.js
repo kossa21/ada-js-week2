@@ -29,6 +29,7 @@ for (let i = namesOfStudents.length - 1; i >= 0; i--) {
 // Modifying elements in an array
 
 namesOfStudents[0] = "Dianna";
+alert(`After modifying the first element, the students are: ${namesOfStudents}`);
 
 // Now I want to make all of the elements in the array
 // namesOfStudents = ["DIANNA, "SABLINA", "SAM"]
@@ -57,4 +58,22 @@ for (let i = 0; i < namesOfStudents.length; i++) {
 
 //After all the loop was executed, now each one of the elements is uppercase
 
-alert(`After modifying the first element, the students are: ${namesOfStudents}`);
+alert(`Now, the elements of the array in uppercase are ${namesOfStudents}`);
+
+// ----------------------------------------------
+
+// We can add new elements to existing arrays
+
+// Now I want to add to the list of students a new student named Patricia
+
+// In order to add a new element, I can use the method push
+
+namesOfStudents.push("Patricia");
+
+alert(`After pushing Patricia, my students now are ${namesOfStudents}`);
+
+// It was a mistake, Patricia belongs to other class so I'm going to remove her
+
+namesOfStudents.pop();
+
+alert(`Patricia went out of the class, so now my students are ${namesOfStudents}`);
